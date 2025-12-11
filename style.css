@@ -1,1 +1,82 @@
-/* Put your code here */
+body {
+            background-color: tan;
+        }
+
+/* sets potion to the left*/
+        #left-column {
+            position: absolute;
+            left: 40px;     /* how far from the left */
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+/* Small left middle items */
+        .small-item {
+            font-family: sans-serif;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 15px;
+            border-color: #682523;
+            border-style: groove;
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+            background-color: darkgoldenrod;
+
+            display: flex;
+            flex-direction: column; /* so text is on top, button under */
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+        }
+
+        .add-button {
+            font-family: sans-serif;
+            font-size: 20px;
+            padding: 5px 10px;
+            background-color: #682523;
+            color: white;
+            border: groove;
+            border-width: 2.5px;
+            cursor: pointer;
+            border-color: #4e1b1a;
+        }
+
+        .add-button:hover {
+            background-color: #4e1b1a;
+        }
+
+
+/* Big centered item */
+        #big-item {
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 50px;
+            border-radius: 15px;
+            border-color: #682523;
+            border-style: groove;
+            background-color: darkgoldenrod;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-25%, -50%); /* horizontaly center it */
+            width: 600px;
+            height: 400px;
+
+            display: flex;
+            flex-direction: column; /* stack content vertically */
+            justify-content: space-between; /* top text at top, cost at bottom */
+            padding: 20px;
+        }
+
+        .item-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover; /* keeps the image looking good */
+            border-radius: 10px;
+        }
+ 
