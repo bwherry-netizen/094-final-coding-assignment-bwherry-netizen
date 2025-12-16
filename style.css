@@ -1,7 +1,6 @@
-body {
-            background-color: tan;
+        body {
+            background-color: rgb(210, 180, 140);
         }
-
 /* sets potion to the left*/
         #left-column {
             position: absolute;
@@ -16,14 +15,14 @@ body {
 /* Small left middle items */
         .small-item {
             font-family: sans-serif;
-            font-size: 30px;
+            font-size: 20px;
             text-align: center;
-            border-radius: 15px;
+            border-radius: 7.5px;
             border-color: #682523;
             border-style: groove;
-            width: 200px;
-            height: 200px;
-            padding: 5px;
+            width: 150px;
+            height: 150px;
+            padding: 2.5px;
             background-color: darkgoldenrod;
 
             display: flex;
@@ -36,12 +35,12 @@ body {
 
         .add-button {
             font-family: sans-serif;
-            font-size: 20px;
-            padding: 5px 10px;
+            font-size: 15px;
+            padding: 2.5px 5px;
             background-color: #682523;
             color: white;
             border: groove;
-            border-width: 2.5px;
+            border-width: 1.25px;
             cursor: pointer;
             border-color: #4e1b1a;
         }
@@ -55,7 +54,7 @@ body {
         #big-item {
             font-family: sans-serif;
             text-align: center;
-            font-size: 50px;
+            font-size: 45px;
             border-radius: 15px;
             border-color: #682523;
             border-style: groove;

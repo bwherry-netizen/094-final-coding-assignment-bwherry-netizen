@@ -7,15 +7,16 @@ const buttons = document.querySelectorAll(".add-button");
 const items = [
     { name: "Chair", price: 15 },
     { name: "Table", price: 30 },
-    { name: "Desk",  price: 20 }
+    { name: "Desk",  price: 20 },
+    { name: "Couch", price: 50 }
 ];
 
 // Track quantity of each item
-const quantities = [0, 0, 0];
+const quantities = [0, 0, 0, 0];
 
 // Store li elements for each item (so we can update them)
 const cartList = document.querySelector("#big-item ul");
-const cartLines = [null, null, null];
+const cartLines = [null, null, null, null];
 
 buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
@@ -40,3 +41,30 @@ buttons.forEach((button, index) => {
             `${items[index].name} - $${items[index].price} - amount: ${quantities[index]}`;
     });
 });
+
+
+
+
+// Changes the color of the background
+function nightMode() {
+
+     const nightColor = `rgb(85, 85, 85)`;
+
+     // Change the background color of the page
+     document.body.style.backgroundColor = nightColor;
+
+
+   }
+
+   const mode = document.getElementById("nightMode")
+   let isGray = false;
+
+    mode.addEventListener("click", function() {
+
+        if (isGray) {
+            document.body.style.backgroundColor = `rgb(210, 180, 140)`;
+        } else {
+            document.body.style.backgroundColor = `rgb(85, 85, 85)`;
+        }
+        isGray = !isGray;
+    });

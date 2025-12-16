@@ -3,6 +3,16 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+<style>
+    .item-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover; /* keeps the image looking good */
+            border-radius: 10px;
+        }
+</style>
+
+    
 </head>
 
 <body>
@@ -15,27 +25,35 @@
 <div id="left-column">
 
         <div class="item">
-    <div class="small-item">
+    <div class="small-item" style="background-color: red;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRRHeU9Pi_XXHLAalDpGZcCrir0G9u0huvsA&s" class="item-img">
         Chair - $15
-<button class="add-button">Add</button>
+<button class="add-button" id="add-chair">Add</button>
     </div>
     
         </div>
    
         <div class="item">
-    <div class="small-item">
+    <div class="small-item" style="background-color: red;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaod_ygdURHIguSsYMHNBhEEJlPrpRXYVxsg&s" class="item-img">
         Table - $30
-        <button class="add-button">Add</button>
+        <button class="add-button" id="add-table">Add</button>
     </div>
         </div>
    
         <div class="item">
-    <div class="small-item">
+    <div class="small-item" style="background-color: red;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIPXTs-EYtvBcrYD81Tvlw5Xcu788HVVi3jg&s" class="item-img">
         Desk - $20
-        <button class="add-button">Add</button>
+        <button class="add-button" id="add-desk">Add</button>
+    </div>
+        </div>
+
+        <div class="item">
+    <div class="small-item" style="background-color: red;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrcIqtRf6TFlQszP5OMT8k5UK8BHlT22u-HA&s" class="item-img">
+        Couch - $50
+        <button class="add-button" id="add-couch">Add</button>
     </div>
         </div>
  
@@ -49,7 +67,11 @@
 
 </ul>
     <div id="total-cost">Total cost: $0</div>
+
 </div>
+
+<button id="nightMode" onclick="nightMode()">Change background color</button>
+
 
 <script src="index.js"></script>
 
